@@ -5,6 +5,7 @@ public class gestionMouvement : MonoBehaviour {
 
 	// Use this for initialization
 	public float speed = 0.01f;
+
 	//private Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -37,7 +38,11 @@ public class gestionMouvement : MonoBehaviour {
 		if (c.collider.tag == "ZombieTag") {
 			//Instantiate(this.zombie,this.gameObject.transform.position,this.gameObject.transform.rotation);
 		
-			//Destroy(this.gameObject);
+			//Player.Instance.HP--;
+			Debug.Log("I haz "+Player.Instance.HP.ToString()+"hp");
+			if (Player.Instance.HP < 1) {
+				Destroy(this.gameObject);
+			}
 		}
 	}
 	// Update is called once per frame

@@ -7,6 +7,8 @@ Project("{95AA99A5-810A-35A3-659D-5322FE4BAD00}") = "Pirate", "Assembly-CSharp.c
 EndProject
 Project("{95AA99A5-810A-35A3-659D-5322FE4BAD00}") = "Pirate", "Assembly-CSharp-Editor.csproj", "{F30A5F8D-EBDB-2F28-3E8F-E743EDD78544}"
 EndProject
+Project("{95AA99A5-810A-35A3-659D-5322FE4BAD00}") = "Pirate", "Assembly-UnityScript.unityproj", "{8911E9A8-6D85-82CF-9E1C-4E108FEAFF55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{F30A5F8D-EBDB-2F28-3E8F-E743EDD78544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F30A5F8D-EBDB-2F28-3E8F-E743EDD78544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30A5F8D-EBDB-2F28-3E8F-E743EDD78544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8911E9A8-6D85-82CF-9E1C-4E108FEAFF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8911E9A8-6D85-82CF-9E1C-4E108FEAFF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8911E9A8-6D85-82CF-9E1C-4E108FEAFF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8911E9A8-6D85-82CF-9E1C-4E108FEAFF55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+																							GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
