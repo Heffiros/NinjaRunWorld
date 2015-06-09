@@ -49,11 +49,14 @@
      <Compile Include="Assets\Pack_AncienEgypt\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\EatBrains.cs" />
+     <Compile Include="Assets\Script\MainMenu.cs" />
+     <Compile Include="Assets\Script\MenuScript.cs" />
      <Compile Include="Assets\Script\MobSpawner.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\Teleportation.cs" />
      <Compile Include="Assets\Script\fistage.cs" />
      <Compile Include="Assets\Script\gestionMouvement.cs" />
+     <Compile Include="Assets\Script\sponer2.cs" />
      <None Include="Assets\sryurikennset\Readmejp.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
