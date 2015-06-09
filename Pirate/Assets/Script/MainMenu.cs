@@ -37,6 +37,6 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void LaunchGame() {
-		Application.LoadLevel (1);
+		Player.Instance.GoToNextLevel ();
 	}
 }

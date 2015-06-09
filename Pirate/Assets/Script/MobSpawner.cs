@@ -31,6 +31,7 @@ public class MobSpawner : MonoBehaviour {
 		if (c.gameObject.tag == "WeaponTag") {
 			hp--;
 			if (hp == 0) {
+				Player.Instance.AddPoints(Player.PointIncome.SPAWNER);
 				Destroy (gameObject);
 			}
 		}

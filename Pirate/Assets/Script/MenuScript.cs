@@ -64,7 +64,7 @@ public class MenuScript : MonoBehaviour {
 
 	public void chooseWea(int i) {
 		if (gold (price[i])) {
-			GameObject instance = Instantiate(Resources.Load(armes [i], typeof(GameObject))) as GameObject;
+			Instantiate(Resources.Load(armes [i], typeof(GameObject)));
 			Player.Instance.weaponInv.Add(i);
 			Player.Instance.WeaponDamage = degats[i];
 			Player.Instance.nameWeapon = name[i];
@@ -91,7 +91,6 @@ public class MenuScript : MonoBehaviour {
 		exitText.enabled = true;
 		ShopMenu.enabled = false;
 		QuitMenu.enabled = false;
-		Debug.Log (ShopMenu.isActiveAndEnabled);
 	}
 	
 	public void startShop () {
@@ -112,7 +111,7 @@ public class MenuScript : MonoBehaviour {
 	}
 	
 	public void exitGame () {
-		Application.LoadLevel (3);
+		Player.Instance.GoToNextLevel ();
 	}
 	
 	public void Potion () {

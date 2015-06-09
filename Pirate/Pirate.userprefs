@@ -1,8 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\MenuScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Player.cs">
     <Files>
-      <File FileName="Assets\Script\MenuScript.cs" Line="93" Column="27" />
+      <File FileName="Assets\Script\EatBrains.cs" Line="5" Column="21" />
+      <File FileName="Assets\Script\MenuScript.cs" Line="67" Column="62" />
+      <File FileName="Assets\Script\fistage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\sponer2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\MobSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Player.cs" Line="37" Column="17" />
+      <File FileName="Assets\Script\Score.cs" Line="17" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

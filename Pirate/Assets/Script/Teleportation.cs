@@ -26,7 +26,7 @@ public class Teleportation : MonoBehaviour {
 	void OnCollisionEnter(Collision c)
 	{
 		if ((c.gameObject.tag == "Player") && count == 1) {
-			Application.LoadLevel(2);
+			Player.Instance.GoShopThenLevel(Player.Instance.GetNextLevel());
 		}
 	}
 }
