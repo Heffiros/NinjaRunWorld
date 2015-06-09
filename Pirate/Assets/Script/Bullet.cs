@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
+using System.Collections.Generic;
 
 public class Bullet : MonoBehaviour {
 	public float speed = 15.0f;
-	public Vector3 Direction {get; set;}
-
+	public List<string> triggerTags;
+	public float lifespan = 2;
 	private float _lifetime;
+	public Vector3 Direction {get; set;}
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,7 @@ public class Bullet : MonoBehaviour {
 	void Update () {
 		_lifetime += Time.deltaTime;
 
-		if (_lifetime > 2) {
+		if (_lifetime > lifespan) {
 			Destroy (gameObject);
 			return;
 		}
@@ -24,7 +26,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision c) {
-		if (c.gameObject.tag == "WeaponTag" || c.gameObject.tag == "ZombieTag") {
+		if (triggerTags.Contains(c.gameObject.tag)) {
 			Destroy (gameObject);
 		}
 	}

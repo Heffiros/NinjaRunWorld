@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\EatBrains.cs" />
      <Compile Include="Assets\Script\MobSpawner.cs" />
      <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Script\Teleportation.cs" />
      <Compile Include="Assets\Script\fistage.cs" />
      <Compile Include="Assets\Script\gestionMouvement.cs" />
      <None Include="Assets\sryurikennset\Readmejp.txt" />

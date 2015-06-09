@@ -4,6 +4,7 @@ using System.Collections;
 public class fistage : MonoBehaviour {
 	public Bullet projectile;
 	public float delay = 1f;
+	public bool automaticFire;
 	private float _timeSinceLast;
 
 	// Use this for initialization
@@ -15,7 +16,7 @@ public class fistage : MonoBehaviour {
 	void Update () {
 		_timeSinceLast += Time.deltaTime;
 
-		if (Input.GetKey (KeyCode.Space) && _timeSinceLast > delay) {
+		if ((automaticFire || Input.GetKey (KeyCode.Space)) && _timeSinceLast > delay) {
 			var bullet = (Bullet)Instantiate (projectile, gameObject.transform.position, Quaternion.identity);
 			bullet.Direction -= transform.right;
 			_timeSinceLast = 0;

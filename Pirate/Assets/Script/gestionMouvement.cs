@@ -35,10 +35,10 @@ public class gestionMouvement : MonoBehaviour {
 
 	void OnCollisionEnter(Collision c)
 	{
-		if (c.collider.tag == "ZombieTag") {
+		if (c.collider.tag == "GreenShoot") {
 			//Instantiate(this.zombie,this.gameObject.transform.position,this.gameObject.transform.rotation);
 		
-			//Player.Instance.HP--;
+			Player.Instance.HP--;
 			Debug.Log("I haz "+Player.Instance.HP.ToString()+"hp");
 			if (Player.Instance.HP < 1) {
 				Destroy(this.gameObject);
